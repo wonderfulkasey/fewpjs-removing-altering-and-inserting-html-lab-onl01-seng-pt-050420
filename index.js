@@ -1,15 +1,10 @@
-// Write your code here!
-document.body.appendChild(element)
+main.remove()
 
-let ul = document.createElement('ul')
 
-for (let i = 0; i < 3; i++) {
-  let li = document.createElement('li')
-  li.innerHTML = (i + 1).toString()
-  ul.appendChild(li)
-}
+let newHeader = document.createElement('h1');
 
-element.appendChild(ul)
+document.body.appendChild(newHeader);
 
-let element = document.querySelector("p#greeting");
-element.innerHTML = 'Hello, DOM!'
+newHeader.id = "victory";
+
+newHeader.innerHTML = "YOUR-NAME is the champion"; 
